@@ -11,8 +11,3 @@ package { 'Flask':
   provider => 'pip3',
   require  => Package['python3-pip'],
 }
-
-# Notify a message when the installation is completed
-notify { 'Flask installed successfully':
-  require => Package['Flask'],
-}
